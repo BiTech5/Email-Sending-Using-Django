@@ -1,0 +1,31 @@
+{% include 'header.html' %}
+<div class="head">
+	<h1>Contact Us</h1>
+</div>
+<br><br>
+<div class="container">
+	<form action="post">
+		<div class="row">
+			<div class="col">
+			  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+			</div>
+			<div class="col">
+			  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+			</div>
+		  </div>
+		  <br>
+		  <div class="col">
+			<input type="text" class="form-control" placeholder="Subject" aria-label="subject">
+		  </div>
+		  <br>
+		<div class="form-floating">
+			<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+			<label for="floatingTextarea2">Comments</label>
+		  </div>
+		  <br>
+		  <div class="col-12">
+			<button type="submit" class="btn btn-primary">Submit</button>
+		  </div>
+	</form>
+</div>
+{% include 'footer.html' %}
