@@ -4,22 +4,23 @@
 </div>
 <br><br>
 <div class="container">
-	<form action="post">
+	<form method="post">
+		{% csrf_token %}
 		<div class="row">
 			<div class="col">
-			  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+			  <input type="text" class="form-control" placeholder="First name" aria-label="First name" name="first">
 			</div>
 			<div class="col">
-			  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+			  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" name="last">
 			</div>
 		  </div>
 		  <br>
 		  <div class="col">
-			<input type="text" class="form-control" placeholder="Subject" aria-label="subject">
+			<input type="text" class="form-control" placeholder="Subject" aria-label="subject" name="title">
 		  </div>
 		  <br>
 		<div class="form-floating">
-			<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+			<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="body"></textarea>
 			<label for="floatingTextarea2">Comments</label>
 		  </div>
 		  <br>
