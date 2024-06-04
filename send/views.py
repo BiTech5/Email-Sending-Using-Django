@@ -9,10 +9,10 @@ def home(request):
         body=str(request.POST.get('body'))
         send_mail(
         title,
-        f"{fir_name} {las_name}\n\\nt\t{body}",
+        f"{fir_name} {las_name}\n\n\t\t{body}",
         "from@gmail.com",
         ["to@gmail.com"],
         fail_silently=False,
         )
-        print(f'{title}\n{fir_name} {las_name}\n\t{body}')
+        print(f'{title}\n{fir_name} {las_name}\n\n\t\t{body}')
     return render(request,'main.html')
